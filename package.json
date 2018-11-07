@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "applescript": "^1.0.0",
+    "body-parser": "^1.18.2",
+    "debug": "^3.1.0",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "express-basic-auth": "^1.1.4",
+    "forever": "^0.15.3",
+    "morgan": "^1.9.0"
+  },
+  "scripts": {
+    "start": "DEBUG=express-api ./node_modules/forever/bin/forever -m 9999999999999999 --colors --fifo index.js",
+    "debug": "DEBUG=express-api node index.js",
+    "lint": "./node_modules/eslint/bin/eslint.js index.js --ext .js"
+  },
+  "name": "remote-control",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Paolo Tremadio <hello@paolotremadio.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}

@@ -10,9 +10,9 @@
     "morgan": "^1.9.0"
   },
   "scripts": {
-    "start": "DEBUG=express-api ./node_modules/forever/bin/forever -m 9999999999999999 --colors --fifo index.js",
-    "debug": "DEBUG=express-api node index.js",
-    "lint": "./node_modules/eslint/bin/eslint.js index.js --ext .js"
+    "start": "DEBUG=express-api ./node_modules/forever/bin/forever -m 9999999999999999 --colors --fifo src/index.js",
+    "debug": "DEBUG=express-api node src/index.js",
+    "lint": "./node_modules/eslint/bin/eslint.js src/ --ext .js"
   },
   "name": "remote-control",
   "version": "1.0.0",

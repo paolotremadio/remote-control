@@ -26,6 +26,8 @@ app.post('/hooks/media/playpause', basicAuth, (req, res) => {
   const script = 'tell application "System Events" to keystroke space';
   // const script = 'tell application "System Events" to key code 100';
 
+  applescript.execString('tell application "System Events" to key code 1');
+
   applescript.execString(script, (err) => {
     res.json({ ok: !err });
   });
